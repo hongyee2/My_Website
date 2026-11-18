@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>나의 첫 웹앱</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f5f9;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .card {
+      max-width: 420px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px #ddd;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>나의 첫 번째 웹앱</h1>
+    <p>GitHub + Vercel 배포 성공!</p>
+    <button onclick="hello()">클릭해보세요</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function hello() {
+      document.getElementById("result")
+        .textContent = "웹앱이 정상 작동합니다!";
+    }
+  </script>
+</body>
+</html>
